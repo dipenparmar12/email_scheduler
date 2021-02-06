@@ -27,7 +27,7 @@ const fakeDataPromises = _.times(STEP_COUNT, async () => {
 
 Promise.all(fakeDataPromises).then((fakeData) => {
   // console.log('fakeData::', fakeData);
-  const writeStream = fs.createWriteStream('seeder/jobs.json');
+  const writeStream = fs.createWriteStream('dev/seeder/jobs.json');
   const pathName = writeStream.path;
 
   // write each value of the array on the file breaking line

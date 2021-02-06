@@ -15,7 +15,7 @@
     "dev": "cross-env NODE_ENV=development nodemon src/index.js",
     "debug": "cross-env NODE_ENV=development PORT=3001 nodemon src/index.js",
     "seed": "cross-env NODE_ENV=development COUNT=30 node ./dev/fake_jobs.js && npm run mongo:import",
-    "mongo:import": "mongoimport --db email_schedule --collection jobs --file seeder/jobs.json",
+    "mongo:import": "mongoimport --db email_schedule --collection jobs --file dev/seeder/jobs.json",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prettier": "prettier --check **/*.js",
